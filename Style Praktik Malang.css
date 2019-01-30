@@ -1,0 +1,306 @@
+body{
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+*{
+    box-sizing: border-box;
+}
+
+[class*="col-"] { float: left; padding: 15px; width: 100%; }
+
+/* For Smartphone */
+[class*="col-"] { width: 100%; }
+
+@media only screen and (min-width: 360px){
+    /* For Tablets */
+    .col-p-1 {width: 8.33%;}
+    .col-p-2 {width: 16.66%;}
+    .col-p-3 {width: 25%;}
+    .col-p-4 {width: 33.33%;}
+    .col-p-5 {width: 41.66%;}
+    .col-p-6 {width: 50%;}
+    .col-p-7 {width: 58.33%;}
+    .col-p-8 {width: 66.66%;}
+    .col-p-9 {width: 75%;}
+    .col-p-10 {width: 83.33%;}
+    .col-p-11 {width: 91.66%;}
+    .col-p-12 {width: 100%;}
+
+    .sejarah img{
+        width: 360px;
+        height: auto;
+    }
+}
+
+@media only screen and (min-width: 600px){
+    /* For Tablets */
+    .col-s-1 {width: 8.33%;}
+    .col-s-2 {width: 16.66%;}
+    .col-s-3 {width: 25%;}
+    .col-s-4 {width: 33.33%;}
+    .col-s-5 {width: 41.66%;}
+    .col-s-6 {width: 50%;}
+    .col-s-7 {width: 58.33%;}
+    .col-s-8 {width: 66.66%;}
+    .col-s-9 {width: 75%;}
+    .col-s-10 {width: 83.33%;}
+    .col-s-11 {width: 91.66%;}
+    .col-s-12 {width: 100%;}
+
+    .sejarah img{
+        width: 431px;
+        height: auto;
+    }
+}
+
+@media only screen and (min-width: 768px){
+    /* For Desktop */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+
+    .sejarah img{
+        width: 431px;
+        height: auto;
+    }
+}
+
+div.menu{
+    width: 100%;
+    background-image: linear-gradient(to top, #00000000 0, #2d2d2d 130%);
+    font-family: Bahnschrift;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1;
+    font-size: 15px;
+}
+
+div.menu ul{
+    list-style-type: none; /* menghilangkan bullet pada list */
+    overflow: hidden; /* menghilangkan scroll bar */ 
+    padding: 0; /*jarak antara border dengan konten (jarak dalam) */
+    margin: 0; /* jarak antara tiap elemen (jarak luar) */
+}
+
+div.menu ul li{
+    float: right; /* posisi element dari kanan */
+}
+
+div.menu li a{
+    text-decoration: none; /* menghilangkan garis pada link */
+    color: #fff; /* warna pada font link */
+    text-align: center; /* rata tengah teks */
+    padding: 13px 15px; /* 13 untuk top & bottom, 15 untuk top & right */
+    font-size: 15px;
+    display: block; /* menampilkan elemen */
+}
+
+div.menu  ul li a:hover{ /* mouseover -> ketika mouse meraba element */
+    color: white;
+    border-top: 2px solid white;
+    /* 2px itu tebalnya, solid itu tipe garis, red itu warna border */
+}
+
+
+div.header{
+    height: 657px;
+    background-image: url("malang4.jpg") ;
+    background-repeat: no-repeat; /* ini biar gambarnya tidak berulang */
+    background-size: cover; /* ini untuk mengatur ukuran background */
+    /* cover digunakan untuk me - fill - kan gambar */
+    background-position: center;
+    float: left;
+    text-align: center;
+}
+
+div.header h1{
+    /* position: absolute; */
+    text-align: center;
+    color: white;
+    /* top: 235px; mengatur jarak dari atas */
+    /* left: 470px; mengatur jarak dari sebelah kiri */
+    font-weight: normal;
+    font-family: Bahnschrift;
+    font-size: 50px;
+    /* margin-left: 50px; */
+}
+
+div.header h4{
+    /* position: absolute; */
+    text-align: center;
+    color: white;
+    /* top: 390px; mengatur jarak dari atas */
+    /* left: 400px; mengatur jarak dari sebelah kiri */
+    font-weight: normal;
+    font-family: Bahnschrift;
+    font-size: 35px;
+    /* margin-left: 185px; */
+    margin-top: -25px;
+}
+
+div.header h1 img{
+    width: 200px;
+    height: 200px;
+    margin-top: 100px;
+    
+}
+
+div.sejarah{
+    height: auto;
+    float: left;
+    background: linear-gradient(to bottom, black, rgb(2, 76, 78), rgb(5, 130, 134));
+}
+
+div.sejarah .col-4 .tugu{
+    height: 288px;
+    border: 2px solid white;
+}
+
+div.sejarah .col-8 h1{
+    font-size: 50px;
+    font-family: Bahnschrift;
+    text-align: center;
+    color: white;
+    font-weight: normal;
+}
+
+div.sejarah p{
+    font-family: Bahnschrift;
+    text-align: justify;
+    margin-left: 15px;
+    color: white;
+    font-size: 20px;
+}
+
+div.budaya{
+    background: linear-gradient(to bottom, rgb(5, 130, 134), rgb(8, 173, 179), rgb(6, 194, 201), rgb(73, 224, 230), rgb(94, 230, 235), rgb(110, 234, 238) );
+    height: auto;
+    float: left;
+    text-align: center;
+}
+
+div.budaya h3{
+    font-family: Bahnschrift;
+    font-size: 45px;
+    font-weight: normal;
+    text-align: center;
+    color: white;
+}
+
+
+.image{
+    width: 300px;
+    height: 250px;
+    margin: 0 auto;
+    /* margin-left: 325px; */
+    border: 2px solid white;
+}
+
+div.budaya .box h2{
+    /* margin-left: 350px; */
+    font-family: Bahnschrift;
+    font-size: 26px;
+    color: white;
+}
+
+div.budaya .box p{
+    font-family: Bahnschrift;
+    color: white;
+    font-size: 18px;
+}
+
+div.makanan{
+    height: auto;
+    float: left;
+    text-align: center;
+    background: linear-gradient(to bottom,  rgb(110, 234, 238), rgb(94, 230, 235), rgb(73, 224, 230), rgb(6, 194, 201), rgb(8, 173, 179), rgb(5, 130, 134));
+}
+
+.ya{
+    width: 300px;
+    height: 250px;
+    margin: 0 auto;
+    /* margin-left: 325px; */
+    border: 2px solid white;
+}
+
+div.makanan h3{
+    font-family: Bahnschrift;
+    font-size: 45px;
+    font-weight: normal;
+    text-align: center; 
+    color: white;
+}
+
+div.makanan .tew h2{
+    font-family: Bahnschrift;
+    color: white;
+    font-size: 26px;
+}
+
+div.makanan .tew p{
+    font-family: Bahnschrift;
+    color: white;
+    font-size: 18px;
+}
+
+div.wisata{
+    height: auto;
+    float: left;
+    text-align: center;
+    background: linear-gradient(to bottom, rgb(5, 130, 134), rgb(2, 76, 78), black);
+}
+
+.ata{
+    width: 300px;
+    height: 250px;
+    margin: 0 auto;
+    /* margin-left: 325px; */
+    border: 2px solid white;
+}
+
+div.wisata h3{
+    font-family: Bahnschrift;
+    font-size: 45px;
+    font-weight: normal;
+    text-align: center; 
+    color: white;
+}
+
+div.wisata .wis h2{
+    font-family: Bahnschrift;
+    color: white;
+    font-size: 26
+}
+
+div.wisata .wis p{
+    font-family: Bahnschrift;
+    color: white;
+    font-size: 18px;
+    
+}
+
+.footer{
+    background: black;
+    color: white;
+    font-family: Bahnschrift;
+}
+
+/* Back to Top Pure CSS by igniel.com */
+html {scroll-behavior:smooth;}
+.ignielToTop {width:50px; height:50px; position:fixed; bottom:10px; right: 70px; z-index:99; cursor:pointer; border-radius:100px; transition:all .5s; background:black url("data:image/svg+xml,%3Csvg viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7.41,15.41L12,10.83L16.59,15.41L18,14L12,8L6,14L7.41,15.41Z' fill='%23fff'/%3E%3C/svg%3E") no-repeat center center;}
+.ignielToTop:hover {background:aqua url("data:image/svg+xml,%3Csvg viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7.41,15.41L12,10.83L16.59,15.41L18,14L12,8L6,14L7.41,15.41Z' fill='%23fff'/%3E%3C/svg%3E") no-repeat center center;}
+
+
